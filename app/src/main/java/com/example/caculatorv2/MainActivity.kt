@@ -2,6 +2,8 @@ package com.example.caculatorv2
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
+import android.widget.Button
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -95,6 +97,145 @@ class MainActivity : AppCompatActivity() {
                 num_text.setText("0")
             } else {
                 num_text.setText(num_text.text.toString().dropLast(1))
+            }
+        }
+
+
+        var input_num = 0
+        var operator:String = ""
+        var total = 0
+        plus_btn.setOnClickListener {
+            input_num  = num_text.text.toString().toInt()
+            operator = "+"
+            num_text.setText("0")
+        }
+
+        equal_btn.setOnClickListener {
+            if (operator == "+"){
+                total = input_num - num_text.text.toString().toInt()
+                num_text.setText(total.toString())
+            }else if (operator == "-"){
+                total = input_num - num_text.text.toString().toInt()
+                num_text.setText(total.toString())
+            }else if (operator == "*"){
+                total = input_num * num_text.text.toString().toInt()
+                num_text.setText(total.toString())
+            }else if (operator == "/"){
+                total = input_num / num_text.text.toString().toInt()
+                num_text.setText(total.toString())
+            }else if (operator == "%"){
+                total = input_num % num_text.text.toString().toInt()
+                num_text.setText(total.toString())
+            }
+        }
+
+
+        minus_btn.setOnClickListener {
+            input_num  = num_text.text.toString().toInt()
+            operator = "-"
+            num_text.setText("0")
+        }
+
+        equal_btn.setOnClickListener {
+            if (operator == "+"){
+                total = input_num - num_text.text.toString().toInt()
+                num_text.setText(total.toString())
+            }else if (operator == "-"){
+                total = input_num - num_text.text.toString().toInt()
+                num_text.setText(total.toString())
+            }else if (operator == "*"){
+                total = input_num * num_text.text.toString().toInt()
+                num_text.setText(total.toString())
+            }else if (operator == "/"){
+                total = input_num / num_text.text.toString().toInt()
+                num_text.setText(total.toString())
+            }else if (operator == "%"){
+                total = input_num % num_text.text.toString().toInt()
+                num_text.setText(total.toString())
+            }
+        }
+
+
+        multiply_btn.setOnClickListener {
+            input_num  = num_text.text.toString().toInt()
+            operator = "*"
+            num_text.setText("0")
+        }
+
+        equal_btn.setOnClickListener {
+            if (operator == "+"){
+                total = input_num - num_text.text.toString().toInt()
+                num_text.setText(total.toString())
+            }else if (operator == "-"){
+                total = input_num - num_text.text.toString().toInt()
+                num_text.setText(total.toString())
+            }else if (operator == "*"){
+                total = input_num * num_text.text.toString().toInt()
+                num_text.setText(total.toString())
+            }else if (operator == "/"){
+                total = input_num / num_text.text.toString().toInt()
+                num_text.setText(total.toString())
+            }else if (operator == "%"){
+                total = input_num % num_text.text.toString().toInt()
+                num_text.setText(total.toString())
+            }
+        }
+
+
+        divide_btn.setOnClickListener {
+            input_num  = num_text.text.toString().toInt()
+            operator = "/"
+            num_text.setText("0")
+        }
+
+        equal_btn.setOnClickListener {
+            if (operator == "+"){
+                total = input_num - num_text.text.toString().toInt()
+                num_text.setText(total.toString())
+            }else if (operator == "-"){
+                total = input_num - num_text.text.toString().toInt()
+                num_text.setText(total.toString())
+            }else if (operator == "*"){
+                total = input_num * num_text.text.toString().toInt()
+                num_text.setText(total.toString())
+            }else if (operator == "/"){
+                total = input_num / num_text.text.toString().toInt()
+                num_text.setText(total.toString())
+            }else if (operator == "%"){
+                total = input_num % num_text.text.toString().toInt()
+                num_text.setText(total.toString())
+            }
+        }
+
+
+        mod_btn.setOnClickListener {
+            input_num  = num_text.text.toString().toInt()
+            operator = "%"
+            num_text.setText("0")
+        }
+
+        equal_btn.setOnClickListener {
+            if (operator == "+"){
+                total = input_num - num_text.text.toString().toInt()
+                num_text.setText(total.toString())
+            }else if (operator == "-"){
+                total = input_num - num_text.text.toString().toInt()
+                num_text.setText(total.toString())
+            }else if (operator == "*"){
+                total = input_num * num_text.text.toString().toInt()
+                num_text.setText(total.toString())
+            }else if (operator == "/"){
+                total = input_num / num_text.text.toString().toInt()
+                num_text.setText(total.toString())
+            }else if (operator == "%"){
+                total = input_num % num_text.text.toString().toInt()
+                num_text.setText(total.toString())
+            }
+        }
+
+        decimal_btn.setOnClickListener {
+            if (!num_text.text.toString().contains(".")) {
+                num_text.text = num_text.text.toString() + "."
             }
         }
     }
