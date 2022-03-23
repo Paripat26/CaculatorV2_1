@@ -100,7 +100,6 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
-
         var input_num = 0
         var operator:String = ""
         var total = 0
@@ -112,7 +111,7 @@ class MainActivity : AppCompatActivity() {
 
         equal_btn.setOnClickListener {
             if (operator == "+"){
-                total = input_num - num_text.text.toString().toInt()
+                total = input_num + num_text.text.toString().toInt()
                 num_text.setText(total.toString())
             }else if (operator == "-"){
                 total = input_num - num_text.text.toString().toInt()
@@ -138,7 +137,7 @@ class MainActivity : AppCompatActivity() {
 
         equal_btn.setOnClickListener {
             if (operator == "+"){
-                total = input_num - num_text.text.toString().toInt()
+                total = input_num + num_text.text.toString().toInt()
                 num_text.setText(total.toString())
             }else if (operator == "-"){
                 total = input_num - num_text.text.toString().toInt()
@@ -164,7 +163,7 @@ class MainActivity : AppCompatActivity() {
 
         equal_btn.setOnClickListener {
             if (operator == "+"){
-                total = input_num - num_text.text.toString().toInt()
+                total = input_num + num_text.text.toString().toInt()
                 num_text.setText(total.toString())
             }else if (operator == "-"){
                 total = input_num - num_text.text.toString().toInt()
@@ -190,7 +189,7 @@ class MainActivity : AppCompatActivity() {
 
         equal_btn.setOnClickListener {
             if (operator == "+"){
-                total = input_num - num_text.text.toString().toInt()
+                total = input_num + num_text.text.toString().toInt()
                 num_text.setText(total.toString())
             }else if (operator == "-"){
                 total = input_num - num_text.text.toString().toInt()
@@ -216,7 +215,7 @@ class MainActivity : AppCompatActivity() {
 
         equal_btn.setOnClickListener {
             if (operator == "+"){
-                total = input_num - num_text.text.toString().toInt()
+                total = input_num + num_text.text.toString().toInt()
                 num_text.setText(total.toString())
             }else if (operator == "-"){
                 total = input_num - num_text.text.toString().toInt()
